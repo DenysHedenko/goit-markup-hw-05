@@ -478,3 +478,66 @@ img {
 .footer-social-icons:focus {
     background-color: #31d0aa;
 }
+
+.subscribeform-container {
+    margin-left: 80px;
+}
+
+.subscribeform-container-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.subscribeform-label {
+    display: flex;
+    gap: 24px;
+}
+
+.subscribeform-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+}
+
+.subscribeform-button {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    align-items: center;
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    background: #4d5ae5;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribeform-button:hover,
+.subscribeform-button:focus {
+    background-color: #404bbf;
+}
+
+.subscribeform-svg{
+    margin-left: 16px;
+    fill: #fff;
+}
