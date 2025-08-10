@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!--header-->
     <header class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -61,7 +62,9 @@
       <section class="section-start">
         <div class="container">
           <h1 class="start-title">Effective Solutions for Your Business</h1>
-          <button class="start-button" type="button">Order Service</button>
+          <button class="start-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -417,6 +420,7 @@
       </section>
     </main>
 
+    <!--footer-->
     <footer class="page-footer">
       <div class="container">
         <div class="footer-container-logo">
@@ -467,7 +471,7 @@
         <div class="subscribeform-container">
           <p class="subscribeform-container-text">Subscribe</p>
           <form class="subscribeform" action="">
-            <label class="subscribeform-label" for="">
+            <label class="subscribeform-label" for="email-form">
               <input
                 class="subscribeform-input"
                 type="email"
@@ -484,9 +488,11 @@
         </div>
       </div>
     </footer>
-    <div class="madalform-background">
+
+    <!--modal form-->
+    <div class="madalform-background" data-modal>
       <div class="madalform">
-        <button class="madalform-button" type="button">
+        <button class="madalform-button" type="button" data-modal-close>
           <svg class="madalform-button-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -495,11 +501,80 @@
           Leave your contacts and we will call you back
         </p>
         <form action="">
-          <div class="madalform-form">
-            <label for="">Name</label>
+          <div class="madalform-form-name">
+            <label class="madalform-user-name" for="user-name">Name</label>
+            <div class="madalform-user-name-div">
+              <input
+                class="madalform-user-name-input"
+                type="text"
+                id="user-name"
+                name="user-name" />
+              <svg class="madalform-user-name-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
+
+          <div class="madalform-form-phone">
+            <label class="madalform-user-phone" for="user-phone">Phone</label>
+            <div class="madalform-user-phone-div">
+              <input
+                class="madalform-user-phone-input"
+                type="text"
+                id="user-phone"
+                name="user-phone" />
+              <svg class="madalform-user-phone-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="madalform-form-email">
+            <label class="madalform-user-email" for="user-email">Email</label>
+            <div class="madalform-user-email-div">
+              <input
+                class="madalform-user-email-input"
+                type="text"
+                id="user-email"
+                name="user-email" />
+              <svg class="madalform-user-email-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="madalform-form-comment">
+            <label class="madalform-comment" for="user-comment">Comment</label>
+            <textarea
+              class="madalform-comment-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"></textarea>
+          </div>
+
+          <div class="madalform-form-policy">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy" />
+            <label class="madalform-form-policy-label" for="user-privacy">
+              <span class="madalform-form-policy-span">
+                <svg class="madalform-form-policy-svg" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="madalform-form-policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="madalform-form-button" type="">Send</button>
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
